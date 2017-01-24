@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +7,12 @@
 </head>
 <body>
 
-	<table class="ui celled inverted table">
+	<table class="ui celled  inverted table">
 
 		<tr>
 			<th>Identifiant</th>
 			<th>Nom</th>
-			<th>Prix</th>
+			<th>Email</th>
 		</tr>
 
 		<?php foreach($users as $user): ?>
@@ -21,11 +20,11 @@
 			<tr>
 				<td><?= $user['user']->getId();?></td>
 				<td><?= $user['user']->getName();?></td>
-				<td><?= $user['user']->getPrice();?></td>
+				<td><?= $user['user']->getMail();?></td>
 			</tr>
 
 		<?php endforeach ?>
 	</table>
 
 </body>
-</html>
+</html> 
