@@ -16,12 +16,12 @@
 			<th>Prix</th>
 		</tr>
 
-		<?php foreach($users as $user): ?>
+		<?php foreach($products as $product): ?>
 
 			<tr>
-				<td><?= $user['user']->getId();?></td>
-				<td><?= $user['user']->getName();?></td>
-				<td><?= $user['user']->getPrice();?></td>
+				<td><?= $product['products']->getId();?></td>
+				<td><?= $product['products']->getName();?></td>
+				<td><?= $product['products']->getPrice();?></td>
 			</tr>
 
 		<?php endforeach ?>

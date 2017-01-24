@@ -1,7 +1,7 @@
 <?php
 
-require 'Controllers/UserController.php';
+require 'Controllers/ProductController.php';
 if(!isset($_GET['page'])) {
-	(new UserController())->userTables();
+	(new ProductController())->productTables();
 }
 ?>
